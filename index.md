@@ -4,9 +4,6 @@
 
 **Email:** nivibilla@gmail.com  
 **LinkedIn:** [linkedin.com/in/srinivasbilla](https://linkedin.com/in/srinivasbilla)  
-**GitHub:** [github.com/nivibilla](https://github.com/nivibilla)  
-**Twitter:** [x.com/sbeastwindy](https://x.com/sbeastwindy)  
-**Phone:** +44 7724280976
 
 ---
 
