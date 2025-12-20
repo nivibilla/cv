@@ -14,7 +14,7 @@ title: Srinivas Billa's CV
 
 ## PROFESSIONAL SUMMARY
 
-Machine Learning Scientist/AI Engineer with a Master's in Data Science and extensive experience designing state-of-the-art generative AI systems. Specializes in building scalable agentic RAG workflows, optimizing large language model inference, and developing multimodal search engines. Bridging the gap between research and production engineering, having led patented high-impact projects at Expedia Group. Deep expertise in agent orchestration, finetuning/reinforcement learning, and ML system design.
+Machine Learning Scientist/AI Engineer with a Master's in Data Science and extensive experience designing state-of-the-art generative AI systems. Specialized in building scalable agentic RAG workflows, optimizing large language model inference, and developing multimodal search engines. Bridging the gap between research and production engineering, having led patented high-impact projects at Expedia Group. Deep expertise in agent orchestration, finetuning/reinforcement learning, and ML system design.
 
 ---
 
@@ -24,13 +24,7 @@ Machine Learning Scientist/AI Engineer with a Master's in Data Science and exten
 Python • PyTorch • PySpark • Ray • Flyte
 
 **Generative AI & LLMs**
-Agentic Workflows • Agents SDK • CodeAct patterns • Large Scale RAG • PEFT (LoRA) • RLHF/RL (GRPO style) • Distillation • Prompt Engineering
-
-**Inference & MLOps**
-vLLM • SGLang • Distributed inference • ML System Design
-
-**Data & Search**
-Vector Databases • Semantic Search • Multimodal Embeddings
+Agentic Workflows • RLHF/RL • Distillation • Distributed inference • ML System Design • Multimodal RAG
 
 ---
 
