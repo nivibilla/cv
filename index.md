@@ -36,9 +36,9 @@ Agentic Workflows • RLHF/RL • Distillation • Distributed inference • ML 
 Transitioned to a full-stack Applied Science role, focusing on ML System Design, Orchestrator APIs, and live/batch deployments while leading research initiatives.
 
 **Aggregated Content Embeddings Semantic Search (ACES)**
-Architected the ACES engine, the backbone for "Property Expert," a grounded, multi-turn agentic RAG system designed to function as a "truth layer" for property queries (fees, amenities, policies).
+Architected the ACES engine, the backbone for "Property Expert," a grounded, multi-turn agentic RAG system designed to function as a "truth layer" for property queries.
 
-*   Engineered a high-performance retrieval system integrating unstructured data (reviews, images, llm.txt style property info, and fine print) into Vector Databases to enable semantic search with explainability and citations.
+*   Engineered a high-performance retrieval system integrating structured & unstructured multimodal data (reviews, images, attributes, ...) into vector databases to enable semantic search with explainability and citations.
 *   Designed for low latency retrieval to power AI Shopping, Ranking, and Content Generation features (Context Engineering).
 *   Architected and built an orchestration interface to allow LLMs to interact directly with the search engine using CodeAct style agent patterns for maximum efficiency.
 
