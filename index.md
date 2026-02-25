@@ -127,4 +127,3 @@ In Preparation
 **Summer Intern** • Euroclear | *August 2018*
 
 ---
-*CV Last Updated: February 2026*
