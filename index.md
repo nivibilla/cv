@@ -14,7 +14,7 @@ title: Srinivas Billa's CV
 
 ## PROFESSIONAL SUMMARY
 
-Applied ML Scientist / AI Engineer with a Master's in Data Science and extensive experience designing and shipping AI systems at scale. Specialised in building end-to-end agentic workflows, optimising large language model inference for production, and developing multimodal search engines serving 50M+ monthly users. Proven track record of taking research from prototype to production — including two patents, a NAACL 2025 publication, and measurable business impact. Core expertise spans agentic orchestration & tooling, applied research (finetuning / reinforcement learning), and ML system design.
+Applied ML Scientist / AI Engineer with a Master's in Data Science and extensive experience designing and shipping AI systems at scale. Specialised in building end-to-end agentic workflows, optimising large language model inference for production, and developing multimodal search engines serving 50M+ monthly users. Proven track record of taking research from prototype to production — including two patents, a NAACL 2025 publication, multiple hackathon wins, and measurable business impact across Expedia, VRBO, and Hotels.com. Core expertise spans agentic orchestration & tooling, applied research (finetuning / reinforcement learning), and ML system design.
 
 ---
 
@@ -33,13 +33,13 @@ vLLM / sglang / TensorRT-LLM • langchain / langgraph • TRL / prime-rl
 ### **Applied ML Scientist / AI Engineer III** • Expedia Group
 *London, UK | January 2025 – Present*
 
-Transitioned to a full-stack Applied Science role, focusing on ML System Design, Orchestrator APIs, and live/batch deployments while leading research initiatives.
+Applied Science role, Prototyping, ML System Design, Orchestration APIs, and live/batch deployments while also leading research initiatives.
 
 **Aggregated Content Embeddings Semantic Search (ACES)**
 
-Architected and built the ACES engine — the backbone for "Property Expert," a grounded, multi-turn agentic RAG system designed to function as a truth layer for hotel and vacation rental queries.
+Architected and built the ACES engine — a generalised backbone service for agentic RAG systems, natural language informed destination/property recommendations and contextual personalisation, all solved through a single interface. Designed to function as a truth layer for a more AI-Native travel search product.
 
-*   Built a multimodal retrieval system over 500M+ embeddings (text, image, structured attributes) serving 50M+ monthly Expedia visitors, with ruthless latency optimisation to meet a <50ms budget for image and review ranking.
+*   Built a multimodal retrieval system over 500M+ embeddings (text, image, structured attributes) serving 50M+ monthly visitors across Expedia, VRBO, and Hotels.com, with ruthless latency optimisation to meet a <50ms budget for image and review ranking.
 *   Multimodal Hierarchical Embeddings (Patented) for efficient graph-like traversal of 500M+ embeddings enabling destination discovery, property selection & ranking, and personalisation.
 *   Designed for low-latency retrieval to power AI Shopping, Ranking, and Content Generation features across the platform.
 *   Architected and built an orchestration interface (MCP, CodeAct) to allow LLMs to interact directly with the search engine.
@@ -70,19 +70,30 @@ Built an "IP Research Agent" for patentability assessments and automated contrac
 ### **Machine Learning Scientist II** • Expedia Group
 *London, UK | August 2022 – January 2025*
 
-Traveller Voice & Content Team: combined applied engineering and research using large language and multimodal models.
+Traveller Voice & Content Team: combined applied engineering and research using large language and multimodal models across Expedia, VRBO, and Hotels.com.
 
-**Review Summarisation System (Patented)**
+**Review Summarisation Suite (Patented)**
 
-Led the development of a large-scale RAG-style offline summarisation system processing 100M+ reviews across millions of properties, improving traveller trust metrics and delivering £500K+ gross profit uplift annually.
+Led end-to-end development of a large-scale RAG-style summarisation platform processing 100M+ reviews across millions of properties — expanding from amenity-level summaries to 100+ topic categories across all three brands, improving traveller trust metrics and delivering $500K+ gross profit uplift annually.
 
-**LLM Optimisation & Finetuning**
-*   Finetuned a 7B model with QLoRA to outperform GPT-4 on aspect-based sentiment analysis, topic segmentation, and summarisation — achieving domain adaptation for Expedia's style and tone that prompting alone could not reach.
-*   Applied Reinforcement Learning with verifiable rewards for further domain adaptation and quality improvement.
+*   Amenity Review Summarisation (ARS): Built the initial pipeline using a deconstructed offline RAG-like system over 50M+ reviews, fine-tuning an in-house Mistral 7B model with qlora adapters for aspect-based sentiment analysis, topic segmentation and summarisation that outperformed GPT-4 across accuracy, hallucination and style/tone metrics
+*   Finetuning for domain adaption, especially tone, style that prompting alone could not solve.
+*   Uplift of 500K of annualised GP
+*   Refactored into a generalised REview CAtegorical snippet, SEntiment, summarisation capability (RECASE)
 
-**Infrastructure & Deployment**
-*   Achieved a 20x inference speedup over native PyTorch by adopting vLLM, and a further 5x throughput improvement over Spark by migrating to Ray for disaggregated CPU/GPU computing — minimising GPU idle time across multi-node, multi-GPU pipelines.
-*   Contributed to and adopted frameworks including vLLM and SGLang to create cost-effective large-scale batch pipelines.
+**Affinity Scoring**
+
+Reusing the above mentioned RECASE data product, auto tagged properties with custom affinities that powered downstream recommendations, causing an uplift of annualised $5.4M GP
+
+**Neighbourhood Descriptions**
+
+*   Built a distributed Spark pipeline to collect Wikipedia data and generat descriptions with LLMs
+*   $10k uplift
+
+**LLM Optimisation & Infrastructure**
+*   Achieved a 20x inference speedup over native PyTorch by adopting vLLM, and a further 5x throughput improvement over Spark by migrating to Ray for disaggregated CPU/GPU computing — minimising GPU idle time across multi-node, multi-GPU pipelines and cutting batch runtimes from days to hours.
+*   Served as the primary point of contact between the Traveller Voice & Content team and the ML Platform team, enabling internal LLM hosting across notebooks, evaluation, and pipeline migration from Databricks.
+*   Applied Reinforcement Learning with verifiable rewards for domain adaptation and quality improvement.
 
 ---
 
@@ -102,11 +113,30 @@ Accepted at the Annual Conference of the North American Chapter of the Associati
 **TravelBench: Exploring LLM Performance in Low-Resource Domains**
 arXiv release
 
-**Multimodal Hierarchical Embeddings for Efficient Hotel Retrieval and Ranking**
-In Preparation
+*Two further papers in preparation on multimodal hierarchical embeddings and multivector representations for hotel retrieval and ranking.*
 
-**PDP-2-Vec: Multimodal, Multivector Embeddings for Contextual Selection and Ranking**
-In Preparation
+---
+
+## PATENTS
+
+**Review Summarisation at Expedia Group**
+Provisional patent awarded September 2024 — large-scale RAG-style review summarisation system. *Shared with Rajesh Gupta.*
+
+**Personalised Themed Selection for Enhanced Search (Hierarchical Embeddings)**
+Provisional patent awarded August 2025 — multimodal hierarchical embeddings for efficient hotel retrieval and ranking. *With Xiaonan Jing and Olivier Roncalez.*
+
+---
+
+## HACKATHONS & AWARDS
+
+**Global Hackathon 2024 — 1st Place (Global Winner)**
+*"Can You Hear the LLM?"* — A multilingual voice-to-voice assistant designed to empower travellers with disabilities and break language barriers.
+
+**Traveller Native Hackathon 2024 — 2nd Place (Global)**
+*"LLMs at the Edge"* — Edge device LLM inference on a user's mobile.
+
+**Global Hackathon 2023 — 3rd Place (EMEA)**
+*"EIMAGEN"* — Used gaussian splatting 3D reconstruction algorithms to reconstruct a room from video/images.
 
 ---
 
@@ -127,3 +157,4 @@ In Preparation
 **Summer Intern** • Euroclear | *August 2018*
 
 ---
+*CV Last Updated: February 2026*
