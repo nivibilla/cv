@@ -14,7 +14,7 @@ title: Srinivas Billa's CV
 
 ## PROFESSIONAL SUMMARY
 
-Applied ML/AI Scientist/Engineer with a Master's in Data Science and extensive experience designing AI systems. Specialized in building scalable agentic workflows, optimizing large language model inference, and developing multimodal search engines. Bridging the gap between research and production engineering, having led patented high-impact projects. With expertise focusing on agentic orchestration & tooling, applied research - finetuning/reinforcement learning, and ML system design.
+Applied ML Scientist/ AI Engineer with a Master's in Data Science and extensive experience designing AI systems. Specialized in building scalable agentic workflows, optimizing large language model inference, and developing multimodal search engines. Bridging the gap between research and production engineering, having led patented high-impact projects. With expertise focusing on agentic orchestration & tooling, applied research - finetuning/reinforcement learning, and ML system design.
 
 ---
 
