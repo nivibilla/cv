@@ -29,7 +29,6 @@ vLLM / sglang / TensorRT-LLM • langchain / langgraph • TRL / prime-rl
 ---
 
 ## PROFESSIONAL EXPERIENCE
-
 ### **Applied ML Scientist / AI Engineer III** • Expedia Group
 *London, UK | January 2025 – Present*
 
@@ -39,23 +38,26 @@ Applied Science role, Prototyping, ML System Design, Orchestration APIs, and liv
 
 Architected and built the ACES engine — a generalised backbone service for agentic RAG systems, natural language informed destination/property recommendations and contextual personalisation, all solved through a single interface. Designed to function as a truth layer for a more AI-Native travel search product.
 
-*   Built a multimodal retrieval system over 500M+ embeddings (text, image, structured attributes) serving 50M+ monthly visitors across Expedia, VRBO, and Hotels.com, with ruthless latency optimisation to meet a <50ms budget for image and review ranking.
+*   Built a multimodal retrieval system over 500M+ embeddings (text, image, structured attributes) acrossExpedia, VRBO, and Hotels.com, with ruthless latency optimisation to meet a <50ms budget for image and review ranking.
 *   Multimodal Hierarchical Embeddings (Patented) for efficient graph-like traversal of 500M+ embeddings enabling destination discovery, property selection & ranking, and personalisation.
 *   Designed for low-latency retrieval to power AI Shopping, Ranking, and Content Generation features across the platform.
-*   Architected and built an orchestration interface (MCP, CodeAct) to allow LLMs to interact directly with the search engine.
+*   Architected and built a unified orchestration interface that integrates semantic retrieval of content across ranking services and agents.
+*   Designed and implemented simulated search & ranking environments for training and evaluating agents with RL.
 
-**Trip Planner Agent**
+**Agents**
+*   **Property Expert** - A question answering chatbot that uses the aforementioned ACES architecture to retrieve context related to the user's question, reason across many sources like reviews, images, geo data, activities etc to best answer the users question.
+*   **Property Ground Truth Validation** - A moderation agent, that takes any piece of information of unknown source about a property and using the ACES engine to fetch all relevant ground truth that we know as a host. Reason and bucket the data for use or quarantine. Reducing hallucinated content to be shown to the user and automating the verification of scraped property content.
+*   **Trip/Itinerary Planner** - Again, using the aggregate content. Developing a long-horizon, end-to-end multi-agent travel planner optimised for complex reasoning, discovery, and itinerary building.
 
-Developing a long-horizon, end-to-end multi-agent travel planner optimised for complex reasoning, discovery, and itinerary building, reusing the ACES engine.
-
-**Hallucination Quantification**
-
-Research on faithfulness evaluation in GenAI; work accepted at NAACL 2025. Developed TravelBench, a domain-specific benchmark for travel tasks.
-
+**Research**
+*   **Hallucination Quantification** - Research on faithfulness evaluation in LLM generated content. Accepted at [NAACL](https://aclanthology.org/2025.findings-naacl.433/)
+*   **[TravelBench](https://arxiv.org/abs/2510.02719)**, a domain-specific benchmark for low resource domains like LLM use in the travel domain.
+*   WIP - Hierarchical Embeddings for efficient discovery, search & ranking through natural language.
+*   WIP - TravelBench V2 - Rewrite of V1 as RL Environments, for simulated training and evaluation of travel domain tasks in a unified framework.
 ---
 
 ### **AI Engineer (GIG)** • Expedia Group (Legal & Corporate Affairs)
-*London, UK | January 2026 – Present | Internal Rotation (50%)*
+*London, UK | January 2026 – March 2026 | Internal Rotation (50%)*
 
 **Contract Intelligence**
 *   Replaced a fully manual, months-long legal review process for 1M+ legacy hand-scanned PDF contracts with an agentic pipeline (multimodal LLMs + embedding models) that intelligently routes straightforward contracts through automated processing and flags complex ones for human review — reducing legal risk exposure and cutting processing time from months to days.
@@ -63,7 +65,7 @@ Research on faithfulness evaluation in GenAI; work accepted at NAACL 2025. Devel
 
 **Agentic Legal Workflows**
 
-Built an "IP Research Agent" for patentability assessments and automated contract drafting/Q&A, with a focus on high compliance and explainability.
+Built an "IP Research Agent assessments and automated contract drafting/Q&A, with a focus on high compliance and explainability. Using swarms of research agents to capture a breadth of information related to patentability assessments.
 
 ---
 
@@ -72,7 +74,7 @@ Built an "IP Research Agent" for patentability assessments and automated contrac
 
 Traveller Voice & Content Team: combined applied engineering and research using large language and multimodal models across Expedia, VRBO, and Hotels.com.
 
-**Review Summarisation Suite (Patented)**
+**Review Summarisation Suite**
 
 Led end-to-end development of a large-scale RAG-style summarisation platform processing 100M+ reviews across millions of properties — expanding from amenity-level summaries to 100+ topic categories across all three brands, improving traveller trust metrics and delivering $500K+ gross profit uplift annually.
 
