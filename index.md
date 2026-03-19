@@ -49,6 +49,13 @@ Architected and built the ACES engine — a generalised backbone service for age
 *   **Property Ground Truth Validation** - A moderation agent, that takes any piece of information of unknown source about a property and using the ACES engine to fetch all relevant ground truth that we know as a host. Reason and bucket the data for use or quarantine. Reducing hallucinated content to be shown to the user and automating the verification of scraped property content.
 *   **Trip/Itinerary Planner** - Again, using the aggregate content. Developing a long-horizon, end-to-end multi-agent travel planner optimised for complex reasoning, discovery, and itinerary building.
 
+**Text Processing**
+Large Scale multi-node gpu orchestration with ray to solve for language processing. Auto distillation pipelines through teacher-student based RL and hill climbing via GRPO-style training for domain adaptation.
+*   **Moderation** Text moderation platform across user generated content and ai generated content. Content quality moderation for company specific style, tone, way of writing etc through RLHF alignment.
+*   **Translation** Localisation of content for accessibility and to increase coverage of downstream tasks.
+*   **Topic Segmentation, Sentiment Analysis** insights generation from 100s of millions of reviews.
+
+
 **Research**
 *   **Hallucination Quantification** - Research on faithfulness evaluation in LLM generated content. Accepted at [NAACL](https://aclanthology.org/2025.findings-naacl.433/)
 *   **[TravelBench](https://arxiv.org/abs/2510.02719)**, a domain-specific benchmark for low resource domains like LLM use in the travel domain.
