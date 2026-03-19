@@ -21,7 +21,7 @@ Applied ML Scientist / AI Engineer with a Master's in Data Science and extensive
 ## TECHNICAL SKILLS
 
 **Languages & Frameworks**
-Python • PyTorch • PySpark • Ray • Flyte
+Python • PyTorch • PySpark • Ray • Flyte• Databricks
 
 **Generative AI & LLMs**
 vLLM / sglang / TensorRT-LLM • langchain / langgraph • TRL / prime-rl
